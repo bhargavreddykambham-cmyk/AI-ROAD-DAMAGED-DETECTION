@@ -1,0 +1,38 @@
+# ============================================================
+# AI Road Damage Detection — YOLOv8 Dataset Config
+# Use this if you want to train your own YOLO model
+# Dataset: RDD2022 or IDD Road Damage Dataset recommended
+# ============================================================
+
+path: ./data
+train: train/images
+val:   valid/images
+test:  test/images
+
+# Number of classes
+nc: 4
+
+# Class names (road damage only — no vehicles)
+names:
+  0: pothole
+  1: crack
+  2: patch
+  3: road_damage
+
+# Class descriptions
+class_info:
+  pothole:     "Dark concave depression, water-filled hole"
+  crack:       "Longitudinal, transverse, alligator, block crack"
+  patch:       "Previously repaired area with colour/texture diff"
+  road_damage: "General surface distress, rutting, raveling"
+
+# Recommended augmentation settings
+augmentation:
+  hsv_h:    0.015
+  hsv_s:    0.7
+  hsv_v:    0.4
+  degrees:  3.0
+  translate: 0.1
+  scale:    0.5
+  mosaic:   1.0
+  mixup:    0.1

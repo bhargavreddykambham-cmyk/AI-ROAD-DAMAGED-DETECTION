@@ -1,0 +1,22 @@
+# ============================================================
+# AI Road Damage Detection — Requirements
+# Install: pip install -r requirements.txt
+# ============================================================
+ 
+# Dashboard
+streamlit==1.28.0
+ 
+# Computer Vision
+opencv-python-headless==4.8.0.76
+ 
+# Image Processing
+Pillow==10.0.0
+numpy==1.24.3
+ 
+# Data & Visualization
+pandas==2.0.3
+plotly==5.17.0
+ 
+# Optional: YOLO (if you want to plug in a trained model)
+# ultralytics==8.0.196
+ 
